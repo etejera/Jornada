@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Jornada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Jornada de Trabajo</h1>
+        <form id="registroJornada">
+            <label for="trabajador">Nombre del Trabajador:</label>
+            <input type="text" id="trabajador" name="trabajador" required>
+            
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            
+            <label for="horaEntrada">Hora de Entrada:</label>
+            <input type="time" id="horaEntrada" name="horaEntrada" required>
+            
+            <label for="horaSalida">Hora de Salida:</label>
+            <input type="time" id="horaSalida" name="horaSalida" required>
+            
+            <button type="submit">Registrar Jornada</button>
+        </form>
+        
+        <div id="registroExitoso" class="hidden">
+            <p>¡Registro de jornada exitoso!</p>
+        </div>
+        
+        <div id="error" class="hidden">
+            <p>Por favor, complete todos los campos correctamente.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
